@@ -39,21 +39,21 @@ gulp.task('babel', (done)=>{
 })
 
 //minifing the js files
-gulp.task('minify', (done)=>{
+gulp.task('minify', (done1)=>{
     console.log(`Minifing the js code using Uglify`)
-    gulp.src('src/*.js')
+    gulp.src('dist/*.js')
         .pipe(minify())
         .pipe(gulp.dest('dist'))
-    done()
-})
+    done1()
+});
 
 //Default Task
-gulp.task('doall', gulp.series('message','babel','minify', (done)=>{
-    console.log(`This is doall`)
-    done()
-}))
+gulp.task('doall', gulp.series('copyhtml','message','babel','message'));
 
 gulp.task('default', (done)=>{
     console.log(`This is default gulp`)
     done()
 })
+
+
+
