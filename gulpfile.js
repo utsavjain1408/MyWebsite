@@ -14,9 +14,8 @@ gulp.task('message', (done) =>{
 //Copies all html files and stores them in the dist folder
 gulp.task('copyhtml', (done)=>{
     console.log('Coping all html files to the dist folder')
-    gulp.src('*.html')
-    gulp.src('*.html')
-        .pipe(gulp.dest('dist'));
+    gulp.src('src/*.html')
+       .pipe(gulp.dest('dist'));
     done()
 })
 
