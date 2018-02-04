@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "nodemon src/index.js --exec babel-node",
-    "start": "nodemon dist/index.js --exec babel-node "
+    "start": "gulp doall | nodemon dist/index.js --exec babel-node "
   },
   "keywords": [
     "Utsav",
@@ -21,6 +21,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "gulp": "^4.0.0",
     "gulp-babel": "^7.0.0",
+    "gulp-cli": "^2.0.1",
     "gulp-imagemin": "^4.1.0",
     "gulp-uglifyes": "^0.1.2",
     "nodemon": "^1.14.7"
