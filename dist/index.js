@@ -24,6 +24,6 @@ app.listen(PORT, function () {
 
 app.get('/', function (req, res) {
 
-    res.sendFile('home.html', { "root": __dirname });
+    res.sendFile('homev2.html', { "root": __dirname });
 });
 //console.log(`Server running at 3000`);

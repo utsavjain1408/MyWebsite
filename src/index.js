@@ -10,6 +10,6 @@ app.listen(PORT, () => console.log(`Server is running at ${PORT}`))
 
 app.get('/', (req,res) =>{
     
-    res.sendFile('home.html',{"root": __dirname})
+    res.sendFile('homev2.html',{"root": __dirname})
 })
 //console.log(`Server running at 3000`);
